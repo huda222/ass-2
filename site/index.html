@@ -1,0 +1,90 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link type='text/css' rel='stylesheet' href='css/week2.css'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menu Test</title>
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin-bottom: 15px;
+  font-family: Helvetica;
+}
+#maindiv {
+  margin-top: 20px;
+  border: 1px solid black;
+  background-color: #ADD8E6;
+  /* height: 150px; */
+  font-family: Helvetica;
+  color: black;
+  position: relative;
+}
+
+#maingraph {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 20px 0 20px;
+  clear:both;
+}
+
+#menu {color: black; font-size: 175%; text-align: center; margin: 25px 0 35px 0;}
+
+#food1 {position: relative; float:right;  height: 30px; width: 120px; padding-top: 3px; color: black; background-color: #ffff00; margin: 0 0 10px 0px; font-size: 125%; text-align: center;  border: 1px solid black;}
+#food2 {position: relative; float:right;  height: 30px; width: 120px; padding-top: 3px; color: black; background-color: #ff0000; margin: 0 0 10px 0px; font-size: 125%; text-align: center;  border: 1px solid black;}
+#food3 {position: relative; float:right;  height: 30px; width: 120px; padding-top: 3px; color: black; background-color: #00ffff; margin: 0 0 10px 0px; font-size: 125%; text-align: center;  border: 1px solid black;}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 90%;
+  margin-right:auto;
+  margin-left:auto;
+}
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    margin-left: 2.5%;
+    float: left;
+  }
+  .col-lg-4 {
+    width: 30%;
+  }
+}
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    margin-left: 2.5%;
+    float: left;
+  }
+  .col-md-6 {
+    width: 47.5%;
+  }
+  .col-md-12 {
+    width: 97.5%;
+  }
+}
+</style>
+</head>
+<body>
+<h1 id="menu">Our Menu</h1>
+
+<div class="row">
+
+  <div class="col-lg-4 col-md-6" id="maindiv">
+  <p id="food1">Chicken</p>
+  <p id="maingraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+  
+  <div class="col-lg-4 col-md-6" id="maindiv">
+  <p id="food2">Beef</p>
+  <p id="maingraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+  
+  <div class="col-lg-4 col-md-12" id="maindiv">
+  <p id="food3">Sushi</p>
+  <p id="maingraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+</div>
+
+</body>
+</html>
